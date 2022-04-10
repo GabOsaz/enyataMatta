@@ -1,16 +1,41 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+    font-family: 'Fredoka', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.navShadow {
+    box-shadow: 0px 2px 6px rgba(229, 229, 229, 0.3);
 }
 
-* {
-  box-sizing: border-box;
+.cardShadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.tableShadow {
+    box-shadow: 0px 0px 30px rgba(13, 47, 161, 0.07);
+}
+
+::-webkit-scrollbar {
+    width: .5em;
+    z-index: 60;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    color: #ffffff;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(209, 204, 204);
+    border-radius: .6em;
+    overflow: hidden;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: rgb(145, 141, 141);
+    overflow-y: scroll;
+  }
